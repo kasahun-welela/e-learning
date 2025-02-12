@@ -31,4 +31,31 @@ const  benefit =[
 
 
 ]
+
+const course =[
+    {
+        "img":"",
+        "length":"Web Design Fundamentals",
+        "level":"",
+        "instructor":""
+    },
+      {
+        "img":"",
+        "length":"",
+        "level":"",
+        "instructor":""
+    },
+      {
+        "img":"",
+        "length":"",
+        "level":"",
+        "instructor":""
+    },
+      {
+        "img":"",
+        "length":"",
+        "level":"",
+        "instructor":""
+    },
+]
 export default benefit;

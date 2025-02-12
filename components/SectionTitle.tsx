@@ -1,4 +1,3 @@
-import { title } from "process";
 import { Button } from "./ui/button";
 interface propsData {
   title: string;
