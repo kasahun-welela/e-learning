@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Be_Vietnam_Pro } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
+import "remixicon/fonts/remixicon.css";
 
 const beVietnamPro = Be_Vietnam_Pro({
   weight: ["400", "700"],
@@ -20,9 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={` ${beVietnamPro.variable} antialiased max-w-[90%] mx-auto`}
-      >
+      <body className={` ${beVietnamPro.variable} `}>
+        <div className="bg-primary py-1 text-center text-white text-sm flex justify-center gap-5">
+          <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+          <i className="ri-arrow-right-long-line"></i>
+        </div>
         {children}
       </body>
     </html>
