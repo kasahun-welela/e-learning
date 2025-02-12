@@ -3,9 +3,12 @@ import { Button } from "./ui/button";
 export default function Hero() {
   return (
     <div className="flex flex-col items-center justify-center gap-7 py-20 md:py-28">
-      <div className="shadow-md flex items-center justify-center gap-3 ">
-        <i className="ri-flashlight-fill bg-red-50 p-2"></i>
-        <h1 className="font-semibold text-base md:text-4xl bg-white  py-2 px-4">
+      <div className="shadow-md">
+        <h1 className="font-semibold text-base md:text-4xl bg-white  py-2 pr-3">
+          {" "}
+          <span className="ml-0 pr-3">
+            <i className="ri-flashlight-fill bg-red-50 p-2 h-full"></i>
+          </span>
           <span className="text-primary">Unlock</span> Your Creative Potential{" "}
         </h1>
       </div>
@@ -23,7 +26,7 @@ export default function Hero() {
           {" "}
           Explore Courses
         </Button>
-        <Button className="font-semibold text-sm bg-white text-gray-700">
+        <Button className="font-semibold text-sm bg-white text-gray-700 hover:text-white">
           {" "}
           View Pricing
         </Button>

@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${beVietnamPro.variable} `}>
+      <body className={` ${beVietnamPro.variable} bg-muted `}>
         <div className="bg-primary py-1 text-center text-white text-sm flex justify-center gap-5">
           <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
           <i className="ri-arrow-right-long-line"></i>
