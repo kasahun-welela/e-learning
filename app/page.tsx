@@ -1,3 +1,4 @@
+import CourseCard from "@/components/CourseCard";
 import Hero from "@/components/Hero";
 import PathCard from "@/components/PathCard";
 import SectionTitle from "@/components/SectionTitle";
@@ -21,6 +22,7 @@ export default function Home() {
           elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget
           habitasse in velit fringilla feugiat senectus in."
       />
+      <CourseCard />
     </div>
   );
 }
