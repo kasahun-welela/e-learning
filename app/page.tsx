@@ -2,6 +2,7 @@ import CourseCard from "@/components/CourseCard";
 import Hero from "@/components/Hero";
 import PathCard from "@/components/PathCard";
 import SectionTitle from "@/components/SectionTitle";
+import Testimonial from "@/components/Testimonial";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -23,6 +24,13 @@ export default function Home() {
           habitasse in velit fringilla feugiat senectus in."
       />
       <CourseCard />
+      <SectionTitle
+        title="Our Testimonials"
+        description="  Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
+          elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget
+          habitasse in velit fringilla feugiat senectus in."
+      />
+      <Testimonial />
     </div>
   );
 }
