@@ -12,28 +12,35 @@ import { courses } from "@/dummyData";
 
 export default function CourseCard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {courses.map((course) => (
-        <Card className="max-w-md">
+        <Card className="" key={course.title}>
           <CardHeader>
-            <Image src="/mobile.png" alt="mobile" width={1000} height={1000} />
-            <div className="flex justify-between items-center mt-2">
+            <Image
+              src={course.img}
+              alt={course.title}
+              width={1000}
+              height={1000}
+            />
+            <div className="pt-3 flex justify-between items-center text-sm">
               <div className="flex gap-2">
                 <p className="text-gray-800 bg-white shadow py-1 px-2 border">
-                  10 Weeks
+                  {course.duration}
                 </p>
                 <p className="text-gray-800 bg-white shadow py-1 px-2 border">
-                  Beginner
+                  {course.level}
                 </p>
               </div>
-              <p>By michael</p>
+              <p className="font-semibold">By {course.instructor}</p>
             </div>
           </CardHeader>
+
           <CardContent>
-            <p className="text-sm text-muted-foreground">
-              Become proficient in front-end web development. Learn HTML, CSS,
-              JavaScript, and popular frameworks like Bootstrap and React. Build
-              interactive and responsive websites.
+            <h1 className="font-semibold leading-none tracking-tight">
+              {course.title}
+            </h1>
+            <p className="mt-4 text-sm text-muted-foreground">
+              {course.description}
             </p>
           </CardContent>
           <CardFooter>

@@ -33,7 +33,7 @@ const benefit = [
 
 const courses = [
     {
-        "img": "web.png",
+        "img": "/web.png",
         "title": "Web Design Fundamentals",
         "level": "Beginner",
         "instructor": "John Smith",
@@ -41,7 +41,7 @@ const courses = [
         "description": "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites."
     },
     {
-        "img": "uiux.png",
+        "img": "/uiux.png",
         "title": "UI/UX Design",
         "level": "Intermediate",
         "instructor": "Emily Johnson",
@@ -49,7 +49,7 @@ const courses = [
         "description": "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wire-framing, prototyping, and usability testing techniques."
     },
     {
-        "img": "mobile.png",
+        "img": "/mobile.png",
         "title": "Mobile App Development",
         "level": "Intermediate",
         "instructor": "David Brown",
@@ -57,7 +57,7 @@ const courses = [
         "description": "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin."
     },
     {
-        "img": "graphics.png",
+        "img": "/graphics.png",
         "title": "Graphics Design for Beginners",
         "level": "Beginner",
         "instructor": "Sarah Thompson",
@@ -65,7 +65,7 @@ const courses = [
         "description": "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media."
     },
     {
-        "img": "frontend.png",
+        "img": "/frontend.png",
         "title": "Front-End Web Development",
         "level": "Intermediate",
         "instructor": "Michael Adams",
@@ -73,7 +73,7 @@ const courses = [
         "description": "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites."
     },
     {
-        "img": "javascript.png",
+        "img": "/javascript.png",
         "title": "Advanced JavaScript",
         "level": "Advance",
         "instructor": "Jennifer Wilson",
