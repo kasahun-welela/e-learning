@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import dummyData from "@/dummyData";
+import { benefit } from "@/dummyData";
 
 interface Path {
   id: string;
@@ -18,7 +18,7 @@ export default function PathCard() {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {dummyData.map((path: Path) => (
+        {benefit.map((path: Path) => (
           <Card className="max-w-md" key={path.id}>
             <CardHeader className="md:text-6xl text-5xl">
               <CardTitle className="text-end ">{path.id}</CardTitle>
