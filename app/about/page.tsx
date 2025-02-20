@@ -2,6 +2,33 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
 export default function page() {
+  const cardDetail = [
+    {
+      img: "",
+      title: "Trusted by Thousands",
+      description:
+        "We have successfully served thousands of students, helping them unlock their potential and achieve their career goals.",
+    },
+    {
+      img: "",
+      title: "Award-Winning Courses",
+      description:
+        "Our courses have received recognition and accolades in the industry for their quality, depth of content, and effective teaching methodologies.",
+    },
+    {
+      img: "",
+      title: "Positive Student Feedback",
+      description:
+        "We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials.",
+    },
+    {
+      img: "",
+      title: "Industry Partnerships",
+      description:
+        "We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies",
+    },
+  ];
+
   return (
     <div className="max-w-[90%] mx-auto">
       <div className="py-6 md:flex justify-between items-center">
@@ -26,30 +53,17 @@ export default function page() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Card>
-          <CardHeader>
-            <Image src="/tool.png" alt="tool" width={50} height={50} />
-            <CardTitle>Trusted by Thousands</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground ">
-              We have successfully served thousands of students, helping them
-              unlock their potential and achieve their career goals.
-            </p>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <Image src="/tool.png" alt="tool" width={50} height={50} />
-            <CardTitle>Trusted by Thousands</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground ">
-              We have successfully served thousands of students, helping them
-              unlock their potential and achieve their career goals.
-            </p>
-          </CardContent>
-        </Card>
+        {cardDetail.map((detail) => (
+          <Card>
+            <CardHeader>
+              <Image src="/tool.png" alt="tool" width={50} height={50} />
+              <CardTitle>{detail.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground ">{detail.description}</p>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   );
