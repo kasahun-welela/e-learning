@@ -55,7 +55,7 @@ export default function page() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {cardDetail.map((detail) => (
-          <Card>
+          <Card key={detail.title}>
             <CardHeader>
               <Image src="/tool.png" alt="tool" width={50} height={50} />
               <CardTitle>{detail.title}</CardTitle>
