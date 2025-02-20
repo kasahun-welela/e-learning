@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
@@ -64,6 +65,19 @@ export default function page() {
             </CardContent>
           </Card>
         ))}
+      </div>
+      <div className="my-4 md:flex justify-between items-center bg-white py-10 px-5">
+        <div className="my-3 md:my-0 md:max-w-[50%]">
+          <h1 className="font-semibold text-2xl">
+            <span className="text-primary">Together</span>, let's shape the
+            future of digital innovation
+          </h1>
+          <p className="text-sm md:text-base text-muted-foreground ">
+            Join us on this exciting learning journey and unlock your potential
+            in design and development.
+          </p>
+        </div>
+        <Button>Join Now</Button>
       </div>
     </div>
   );
