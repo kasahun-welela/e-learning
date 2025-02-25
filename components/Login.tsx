@@ -45,7 +45,7 @@ export default function Login() {
     console.log(values);
   }
   return (
-    <Card className="max-w-md">
+    <Card className="">
       <CardHeader>
         <CardTitle className="text-center text-3xl md:text-4xl">
           Login
