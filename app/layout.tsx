@@ -4,7 +4,6 @@ import "./globals.css";
 import "remixicon/fonts/remixicon.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Head from "next/head";
 
 const beVietnamPro = Be_Vietnam_Pro({
   weight: ["400", "700"],

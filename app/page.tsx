@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import PathCard from "@/components/PathCard";
 import SectionTitle from "@/components/SectionTitle";
 import Testimonial from "@/components/Testimonial";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
