@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className="text-center">
         <p className="font-medium md:text-3xl text-2xl">
-          with Online Design and Development Courses.
+          With Online Design and Development Courses.
         </p>
         <p className="md:text-base text-sm ">
           Learn from Industry Experts and Enhance Your Skills.

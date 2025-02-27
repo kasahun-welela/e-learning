@@ -39,34 +39,22 @@ export default function Footer() {
             <h1 className="font-semibold pb-2">Home</h1>
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <Link
-                  href="#"
-                  className="hover:text-primary hover:font-semibold"
-                >
+                <Link href="#" className="hover:text-primary ">
                   Benefits
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="hover:text-primary hover:font-semibold"
-                >
+                <Link href="#" className="hover:text-primary ">
                   Our Courses
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="hover:text-primary hover:font-semibold"
-                >
+                <Link href="#" className="hover:text-primary ">
                   Our Testimonials
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="hover:text-primary hover:font-semibold"
-                >
+                <Link href="#" className="hover:text-primary ">
                   Our FAQ
                 </Link>
               </li>
@@ -77,26 +65,17 @@ export default function Footer() {
             <h1 className="font-semibold pb-2">About US</h1>
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <Link
-                  href="#"
-                  className="hover:text-primary hover:font-semibold"
-                >
+                <Link href="#" className="hover:text-primary ">
                   Company
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="hover:text-primary hover:font-semibold"
-                >
+                <Link href="#" className="hover:text-primary ">
                   Achievements
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="hover:text-primary hover:font-semibold"
-                >
+                <Link href="#" className="hover:text-primary ">
                   Our Goals
                 </Link>
               </li>
@@ -134,9 +113,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="pt-6 text-center">
-        © 2023 Skillbridge. All rights reserved.
-      </p>
+      <div className="max-w-[90%] mx-auto py-5">
+        <hr />
+        <p className="pt-6 text-center text-muted-foreground">
+          © 2023 Skillbridge. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 }
