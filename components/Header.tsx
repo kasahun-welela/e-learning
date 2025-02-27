@@ -2,10 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const path = usePathname();
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
@@ -30,27 +31,52 @@ export default function Header() {
               />
             </Link>
             <li>
-              <Link className="hover:text-primary" href="/">
+              <Link
+                className={`${
+                  path === "/" ? "text-primary font-semibold" : ""
+                } hover:text-primary`}
+                href="/"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link className="hover:text-primary" href="/course">
+              <Link
+                className={`${
+                  path === "/course" ? "text-primary font-semibold" : ""
+                } hover:text-primary`}
+                href="/course"
+              >
                 Courses
               </Link>
             </li>
             <li>
-              <Link className="hover:text-primary" href="/about">
+              <Link
+                className={`${
+                  path === "/about" ? "text-primary font-semibold" : ""
+                } hover:text-primary`}
+                href="/about"
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link className="hover:text-primary" href="/price">
+              <Link
+                className={`${
+                  path === "/price" ? "text-primary font-semibold" : ""
+                } hover:text-primary`}
+                href="/price"
+              >
                 Pricing
               </Link>
             </li>
             <li>
-              <Link className="hover:text-primary" href="/contact">
+              <Link
+                className={`${
+                  path === "/contact" ? "text-primary font-semibold" : ""
+                } hover:text-primary`}
+                href="/contact"
+              >
                 Contact
               </Link>
             </li>
@@ -59,7 +85,12 @@ export default function Header() {
         <div>
           <ul className="flex justify-between gap-4 text-gray-700">
             <li>
-              <Link className="hover:text-primary" href="/">
+              <Link
+                className={`${
+                  path === "/" ? "text-primary font-semibold" : ""
+                } hover:text-primary`}
+                href="/"
+              >
                 Sign Up
               </Link>
             </li>
@@ -87,7 +118,12 @@ export default function Header() {
           />
         </Link>
         <div className="flex items-center gap-4">
-          <Link className="hover:text-primary" href="/">
+          <Link
+            className={`${
+              path === "/" ? "text-primary font-semibold" : ""
+            } hover:text-primary`}
+            href="/"
+          >
             Sign Up
           </Link>
           <Link
@@ -117,7 +153,9 @@ export default function Header() {
             <ul className="space-y-4 p-4">
               <li>
                 <Link
-                  className="hover:text-primary"
+                  className={`${
+                    path === "/" ? "text-primary font-semibold" : ""
+                  } hover:text-primary`}
                   href="/"
                   onClick={closeMenu}
                 >
@@ -126,7 +164,9 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  className="hover:text-primary"
+                  className={`${
+                    path === "/course" ? "text-primary font-semibold" : ""
+                  } hover:text-primary`}
                   href="/course"
                   onClick={closeMenu}
                 >
@@ -135,7 +175,9 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  className="hover:text-primary"
+                  className={`${
+                    path === "/about" ? "text-primary font-semibold" : ""
+                  } hover:text-primary`}
                   href="/about"
                   onClick={closeMenu}
                 >
@@ -144,7 +186,9 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  className="hover:text-primary"
+                  className={`${
+                    path === "/price" ? "text-primary font-semibold" : ""
+                  } hover:text-primary`}
                   href="/price"
                   onClick={closeMenu}
                 >
@@ -153,7 +197,9 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  className="hover:text-primary"
+                  className={`${
+                    path === "/contact" ? "text-primary font-semibold" : ""
+                  } hover:text-primary`}
                   href="/contact"
                   onClick={closeMenu}
                 >
