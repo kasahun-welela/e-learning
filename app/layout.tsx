@@ -3,6 +3,7 @@ import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const beVietnamPro = Be_Vietnam_Pro({
   weight: ["400", "700"],
@@ -27,6 +28,7 @@ export default function RootLayout({
           <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
           <i className="ri-arrow-right-long-line"></i>
         </div>
+        <Header />
         {children}
         <Footer />
       </body>
