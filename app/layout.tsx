@@ -4,6 +4,7 @@ import "./globals.css";
 import "remixicon/fonts/remixicon.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Head from "next/head";
 
 const beVietnamPro = Be_Vietnam_Pro({
   weight: ["400", "700"],
@@ -23,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo2.png" />
+      </head>
       <body className={` ${beVietnamPro.variable} bg-muted `}>
         <div className="bg-primary py-1 my-3 text-center text-white text-sm flex justify-center gap-5">
           <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
