@@ -34,7 +34,7 @@ export default function Testimonial() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {testimonials.map((testimonial) => (
-        <Card>
+        <Card key={testimonial.name}>
           <CardHeader>
             <p className="text-sm text-muted-foreground">
               {testimonial.comment}
