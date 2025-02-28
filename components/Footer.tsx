@@ -84,11 +84,11 @@ export default function Footer() {
           <div>
             {" "}
             <h1 className="font-semibold pb-2">Social Profiles</h1>
-            <ul className="flex justify-between">
+            <ul className="flex gap-4">
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:font-semibold"
+                  className="hover:text-primary hover:font-semibold bg-gray-300 rounded p-2"
                 >
                   <i className="ri-facebook-circle-fill text-xl"></i>
                 </Link>
@@ -96,7 +96,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:font-semibold"
+                  className="hover:text-primary hover:font-semibold bg-gray-300 rounded p-2"
                 >
                   <i className="ri-twitter-x-fill text-xl"></i>
                 </Link>
@@ -104,7 +104,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:font-semibold"
+                  className="hover:text-primary hover:font-semibold bg-gray-300 rounded p-2"
                 >
                   <i className="ri-linkedin-box-fill text-xl"></i>
                 </Link>

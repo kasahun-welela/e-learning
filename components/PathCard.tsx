@@ -17,9 +17,9 @@ interface Path {
 export default function PathCard() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {benefit.map((path: Path) => (
-          <Card className="max-w-md" key={path.id}>
+          <Card key={path.id}>
             <CardHeader className="md:text-6xl text-5xl">
               <CardTitle className="text-end ">{path.id}</CardTitle>
               <CardDescription className="font-semibold text-xl">
@@ -29,8 +29,8 @@ export default function PathCard() {
             <CardContent>
               <p className="text-sm text-gray-700">{path.description} </p>
             </CardContent>
-            <CardFooter className="text-end">
-              <i className="ri-arrow-right-up-line shadow p-2 text-primary inline-block"></i>
+            <CardFooter className="flex justify-end ">
+              <i className="ri-arrow-right-up-line bg-muted shadow py-3 px-4 text-primary"></i>
             </CardFooter>
           </Card>
         ))}

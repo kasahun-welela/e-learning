@@ -10,15 +10,14 @@ import { courses } from "@/dummyData";
 
 export default function CourseCard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
       {courses.map((course) => (
         <Card className="" key={course.title}>
           <CardHeader>
             <Image
               src={course.img}
               alt={course.title}
-              width={1000}
-              height={1000}
+              className="w-full h-auto"
             />
             <div className="pt-3 flex justify-between items-center text-sm">
               <div className="flex gap-2">
