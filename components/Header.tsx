@@ -33,7 +33,9 @@ export default function Header() {
             <li>
               <Link
                 className={`${
-                  path === "/" ? "text-primary font-semibold" : ""
+                  path === "/"
+                    ? "text-primary font-semibold bg-gray-200 p-3 rounded"
+                    : ""
                 } hover:text-primary`}
                 href="/"
               >
@@ -43,7 +45,9 @@ export default function Header() {
             <li>
               <Link
                 className={`${
-                  path === "/course" ? "text-primary font-semibold" : ""
+                  path === "/course"
+                    ? "text-primary font-semibold bg-gray-200 p-3 rounded"
+                    : ""
                 } hover:text-primary`}
                 href="/course"
               >
@@ -53,7 +57,9 @@ export default function Header() {
             <li>
               <Link
                 className={`${
-                  path === "/about" ? "text-primary font-semibold" : ""
+                  path === "/about"
+                    ? "text-primary font-semibold bg-gray-200 p-3 rounded"
+                    : ""
                 } hover:text-primary`}
                 href="/about"
               >
@@ -63,7 +69,9 @@ export default function Header() {
             <li>
               <Link
                 className={`${
-                  path === "/price" ? "text-primary font-semibold" : ""
+                  path === "/price"
+                    ? "text-primary font-semibold bg-gray-200 p-3 rounded"
+                    : ""
                 } hover:text-primary`}
                 href="/price"
               >
@@ -73,7 +81,9 @@ export default function Header() {
             <li>
               <Link
                 className={`${
-                  path === "/contact" ? "text-primary font-semibold" : ""
+                  path === "/contact"
+                    ? "text-primary font-semibold bg-gray-200 p-3 rounded"
+                    : ""
                 } hover:text-primary`}
                 href="/contact"
               >
@@ -87,7 +97,7 @@ export default function Header() {
             <li>
               <Link
                 className={`${
-                  path === "/" ? "text-primary font-semibold" : ""
+                  path === "/" ? "text-primary font-semibold " : ""
                 } hover:text-primary`}
                 href="/"
               >

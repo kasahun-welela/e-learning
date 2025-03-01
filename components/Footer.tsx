@@ -88,7 +88,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:font-semibold bg-gray-300 rounded p-2"
+                  className="hover:text-primary hover:font-semibold bg-gray-200 rounded p-2"
                 >
                   <i className="ri-facebook-circle-fill text-xl"></i>
                 </Link>
@@ -96,7 +96,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:font-semibold bg-gray-300 rounded p-2"
+                  className="hover:text-primary hover:font-semibold bg-gray-200 rounded p-2"
                 >
                   <i className="ri-twitter-x-fill text-xl"></i>
                 </Link>
@@ -104,7 +104,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:font-semibold bg-gray-300 rounded p-2"
+                  className="hover:text-primary hover:font-semibold bg-gray-200 rounded p-2"
                 >
                   <i className="ri-linkedin-box-fill text-xl"></i>
                 </Link>
